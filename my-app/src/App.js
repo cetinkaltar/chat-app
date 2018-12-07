@@ -31,7 +31,10 @@ class App extends Component {
     });
   }
   sendMessage = async (messageInput) => {
+    // TODO Unnecessary variable
     let response = await axios.post('http://localhost:8080/api/set', {}, {
+      // TODO Why message as params and not request body?
+      // Long messages will throw: IllegalArgumentException: Request header is too large
       params: {
         msg: messageInput
       }

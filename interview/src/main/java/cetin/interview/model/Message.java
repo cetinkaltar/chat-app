@@ -11,6 +11,8 @@ public class Message {
     @GeneratedValue
     private Long id;
     private String message;
+    // TODO Java 8 date constructs such as Instant are preferred.
+    // Hibernate does need an additional dependency to handle that though.
     private Timestamp date;
 
     public Long getId() {

@@ -30,7 +30,7 @@ class MessageList extends React.Component {
                   <List.Item>
                     <List.Item.Meta
                       avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                      title={<a>{item.date}</a>}
+                      title={<a>{item.date}</a>} // TODO Formatting would be nice
                       description={item.message}
                     />
                   </List.Item>
@@ -45,7 +45,7 @@ class MessageList extends React.Component {
                   <List.Item>
                     <List.Item.Meta
                       avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                      title={<a>{item.date}</a>}
+                      title={<a>{item.date}</a>} // TODO Formatting would be nice
                       description={item.message}
                     />
                   </List.Item>
